@@ -2,17 +2,44 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Nicki Anselmo</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+      <h1>Nicki Anselmo</h1>
+      <h2>Portfolio Overview</h2>
+      <p>I hope to highlight some of my interests which include:</p>
+      <ul>
+        <li>Civic Tech</li>
+        <li>Computer Science Education</li>
+        <li>Sports + The Outdoors</li>
+        <li>Books + Literature</li>
+      </ul>
+      <h2>Folks Who Inspire Me</h2>
+      <p>Hover over the book picture to see some of the folks I love to learn from:</p>
+      <p id="person-container"></p>
+      <img onmouseover="showRandomThoughtLeader()" src="https://static.scientificamerican.com/sciam/cache/file/1DDFE633-2B85-468D-B28D05ADAE7D1AD8_source.jpg">
+      <h2>Projects I've Worked On - or Want to Work On</h2>
+      <div id="code-nation">
+        <h3>Code Nation (Current)</h3>
+        <img id="cn-logo" src="https://codenation.org/wp-content/uploads/2018/10/Untitled-1.gif">
+        <p>Code Nation is a national non-profit designed to increase access to CS Education - specificaly for students from underresourced communities. I volunteer as a weekend workshop instructor.</p>
+    </div>
+    <div id="robotics">
+        <h3>Middle School Robotics Team (Past)</h3>
+        <img src="/images/regional-tourney.jpg">
+        <p> Prior to joining Google, I was a developer at Cesar Chavez Elementary School. I started a Code Club and Robotics Team. In our first year, we were the only Chicago Public School team to make it to the state and then national competition. Check us out on Chicago's local news station <a href="https://wgntv.com/2017/05/08/midday-fix-vex-world-robotics-championship-competitors-jose-lemus-and-gabriel-parra/">here</a>.</p>
+      </div>
+      <div id="weasley-clock">
+        <h3>Weasley Clock (Future)</h3>
+        <img src="https://cdn-blog.adafruit.com/uploads/2017/01/FO9GSWBIXGFORAL.LARGE_.jpg">
+        <p>I don't make time to tinker as much as I should, but I would love for my next project to be this Weasley Clock. I would use Google Maps to determine my location (and my partner's) and ping that to an Arduino which would use servo motors to update a clock. There are some instructions on the web including <a href="https://www.instructables.com/id/Build-Your-Own-Weasley-Location-Clock/">these</a> from Instructables and <a href="https://blog.adafruit.com/2017/01/16/build-your-own-functional-weasley-clock-with-iot-location-tracker-arduinomonday/">these</a> from Adafruit. </p>
+        
+      </div>
+     
+      
     </div>
   </body>
 </html>

@@ -15,14 +15,24 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+
+function showRandomThoughtLeader() {
+  const people_arr =
+      ['Mekka Okereke', 'Seymour Papert', 'Karen Brennan', 'Robin DiAngelo', 'Janelle Monae', 'Hermione Grainger', 'Ray Salazar' ];
+      
+  //Get current person
+  const personContainer = document.getElementById('person-container');
+  const curPerson = personContainer.innerText;
+
+  // Pick a random person that's not in the list
+  var index = people_arr.indexOf(curPerson);
+    if (index >= 0) {
+        people_arr.splice( index, 1 );
+    }
+  const randomPerson = people_arr[Math.floor(Math.random() * people_arr.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  
+  personContainer.innerText = randomPerson;
 }
